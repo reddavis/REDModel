@@ -12,13 +12,13 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "NSUserDefaults wrapper"
   s.description      = <<-DESC
-                       NSUserDefaults wrapper
+                       NSUserDefaults wrapper - http://blog.red.to/posts/redmodel.html
                        DESC
   s.homepage         = "https://github.com/reddavis/REDModel"
   s.license          = 'MIT'
   s.author           = { "Red Davis" => "me@red.to" }
   s.source           = { :git => "https://github.com/reddavis/REDModel.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/reddavis'
+  s.social_media_url = 'https://twitter.com/reddavis'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

@@ -7,7 +7,7 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+[Blog post and examples](http://blog.red.to/posts/redmodel.html)
 
 ## Requirements
 
