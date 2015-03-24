@@ -10,19 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "REDModel"
   s.version          = "0.1.0"
-  s.summary          = "A short description of REDModel."
+  s.summary          = "NSUserDefaults wrapper"
   s.description      = <<-DESC
-                       An optional longer description of REDModel
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       NSUserDefaults wrapper
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/REDModel"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/reddavis/REDModel"
   s.license          = 'MIT'
   s.author           = { "Red Davis" => "me@red.to" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/REDModel.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/reddavis/REDModel.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/reddavis'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -31,8 +27,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'REDModel' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
