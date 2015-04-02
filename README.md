@@ -7,7 +7,7 @@
 
 ## Usage
 
-[Blog post and examples](http://blog.red.to/posts/redmodel.html)
+[Blog post and examples](http://red.to/blog/2015/3/24/redmodel)
 
 ## Requirements
 
