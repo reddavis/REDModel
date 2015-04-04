@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import <objc/objc-class.h>
+#import <objc/objc-runtime.h>
 
 
 @interface REDProperty : NSObject
