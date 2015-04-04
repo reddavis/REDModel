@@ -10,5 +10,12 @@
 
 
 @implementation TestModel
+
 @dynamic string, date, number;
+
+- (NSString *)modelIdentifier
+{
+    return @"testModel";
+}
+
 @end

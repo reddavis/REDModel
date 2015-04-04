@@ -10,7 +10,7 @@
 
 
 @interface TestUser ()
-@property (copy, nonatomic) NSString *REDModelIdentifier;
+@property (copy, nonatomic) NSString *modelIdentifier;
 @end
 
 
@@ -23,7 +23,7 @@
     self = [self init];
     if (self)
     {
-        self.REDModelIdentifier = identifier;
+        self.modelIdentifier = identifier;
     }
     
     return self;
