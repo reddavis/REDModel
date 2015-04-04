@@ -41,8 +41,6 @@ static inline NSString *userDefaultsKeyForProperty(NSString *propertyName, Class
 
 @interface REDModel ()
 
-@property (copy, nonatomic) NSString *REDModelIdentifier;
-
 @end
 
 
@@ -82,7 +80,7 @@ static inline NSString *userDefaultsKeyForProperty(NSString *propertyName, Class
                     else
                     {
                         setterIMP = imp_implementationWithBlock(^(id self, id object) {
-                            NSString *identifier = [self respondsToSelector:@selector(REDModelIdentifier)] ? [self REDModelIdentifier] : nil;
+                            NSString *identifier = [self modelIdentifier];
                             NSString *userDefaultsKey = userDefaultsKeyForProperty(property.name, class, identifier);
                             
                             [red_userDefaults() setObject:object forKey:userDefaultsKey];
@@ -108,7 +106,7 @@ static inline NSString *userDefaultsKeyForProperty(NSString *propertyName, Class
                     else
                     {
                         getterIMP = imp_implementationWithBlock(^(id self) {
-                            NSString *identifier = [self respondsToSelector:@selector(REDModelIdentifier)] ? [self REDModelIdentifier] : nil;
+                            NSString *identifier = [self modelIdentifier];
                             NSString *userDefaultsKey = userDefaultsKeyForProperty(property.name, class, identifier);
                             
                             NSLog(@"getter %@ -- %@ %@ %@", userDefaultsKey, property.name, NSStringFromClass(class), identifier);

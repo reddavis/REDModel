@@ -10,6 +10,7 @@
 
 
 @protocol REDModel <NSObject>
+- (NSString *)modelIdentifier;
 @end
 
 
