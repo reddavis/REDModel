@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "REDModel"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "NSUserDefaults wrapper"
   s.description      = <<-DESC
                        NSUserDefaults wrapper - http://blog.red.to/posts/redmodel.html

@@ -9,7 +9,7 @@
 #import "REDModel.h"
 #import "REDProperty.h"
 
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 
 
