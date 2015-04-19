@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/reddavis/REDModel.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/reddavis'
 
-  s.platform     = :ios, '7.0'
+  s.platform = :ios, '7.0'
+  s.platform = :osx
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
